@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content= "width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+  
+  <header>
+     <h1>Welcome to  Queen Viktorya's Store!</h1>
+     <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart</a></li>
+             <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+   </header>
+   <main>
+       <section class="product-list">
+               <h2>Featured Prod</h2>
+             <div class="product">
+                         <img src="productl.jpg" alt="product 1">
+                         <h3>Product Name</h3>
+                         <p>Short description of the product.</p>
+                         <button>Add to Cart</button>
+                         </div>
+                       <!-- Այստեղ կարող ես ավելացնել ավելի շատ ապրանքներ -->
+                        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Queen Viktorya Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+                      
+                     
+            
+           
