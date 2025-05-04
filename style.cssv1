@@ -1,0 +1,131 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: none; /* Սկզբում թաքցրած */
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: green;
+    transition: all 0.3s;
+}
+
+.menu li a:hover {
+    color: limegreen;
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: url('parallax-bg.jpg') no-repeat center center/cover;
+}
+
+.layer1, .layer2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    transition: transform 0.5s ease-in-out;
+}
+
+.layer1 { top: 20%; font-size: 40px; }
+.layer2 { top: 50%; font-size: 30px; }
+
+.content {
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+    color: green;
+}
+
+button {
+    background-color: green;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: limegreen;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.5);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /* Սկզբում թաքցրած */
+    transition: all 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+    background-color: limegreen;
+    transform: scale(1.1);
+}
+@media screen and (max-width:768px){
+  .menu{
+    display: none; 
+  }
+  .menu-toggle{
+    display: block;
+  }
+  .parallax-container{
+    height: 80vh;
+  }
+  .layer1{font-size: 30px; top: 15px;}
+  .layer2{font-size: 25px; top: 40px;}
+  .content{
+    font-size: 18px;
+    padding:30px;
+  }
+  botton{
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px){
+  #BackToTop{
+    display: block;
+    buttom: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
